@@ -5,7 +5,7 @@
 #include <windows.h>
 #include <assert.h>
 
-// 参考 https://msdn.microsoft.com/en-us/library/ms997538.aspx
+// 蜿り� https://msdn.microsoft.com/en-us/library/ms997538.aspx
 typedef struct
 {
     WORD           idReserved;   // Reserved (must be 0)
@@ -41,7 +41,7 @@ typedef struct
 } GRPICONDIRENTRY, *LPGRPICONDIRENTRY;
 #pragma pack( pop )
 
-// 参考 http://www.atmarkit.co.jp/bbs/phpBB/viewtopic.php?topic=26073&forum=7&start=16
+// 蜿り� http://www.atmarkit.co.jp/bbs/phpBB/viewtopic.php?topic=26073&forum=7&start=16
 class IconFile {
 public:
 	enum {

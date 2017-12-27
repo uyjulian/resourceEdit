@@ -8,10 +8,10 @@
 class ExeIconData {
 	static const int DEFAULT_ID = 2000;
 
-	LPTSTR icon_group_;			// ƒAƒCƒRƒ“ƒOƒ‹[ƒv
-	WORD lang_id_;				// ƒAƒCƒRƒ“ƒOƒ‹[ƒv‚ÌƒƒP[ƒ‹
+	LPTSTR icon_group_;			// ã‚¢ã‚¤ã‚³ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—
+	WORD lang_id_;				// ã‚¢ã‚¤ã‚³ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã®ãƒ­ã‚±ãƒ¼ãƒ«
 	WORD min_id_;
-	std::vector<WORD> icon_ids_;// ƒAƒCƒRƒ“ƒOƒ‹[ƒv‚ÌƒAƒCƒRƒ“ID
+	std::vector<WORD> icon_ids_;// ã‚¢ã‚¤ã‚³ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã®ã‚¢ã‚¤ã‚³ãƒ³ID
 
 	static BOOL CALLBACK EnumResNameProc( HMODULE hModule, LPCTSTR lpszType, LPTSTR lpszName, LONG_PTR lParam );
 	static BOOL CALLBACK EnumResLangProc( HANDLE hModule, LPCTSTR lpszType, LPCTSTR lpszName, WORD wIDLanguage, LONG_PTR lParam );
