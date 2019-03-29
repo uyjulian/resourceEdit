@@ -4,6 +4,7 @@
 #include <string>
 #include "EditResource.h"
 
+#define EXPORT(hr) extern "C" __declspec(dllexport) hr __stdcall
 
 static void addMember(iTJSDispatch2 *dispatch, const tjs_char *name, iTJSDispatch2 *member) {
 	tTJSVariant var = tTJSVariant(member);
@@ -75,7 +76,7 @@ int WINAPI DllEntryPoint(HINSTANCE hinst, unsigned long reason, void* lpReserved
 }
 //---------------------------------------------------------------------------
 static tjs_int GlobalRefCountAtInit = 0;
-extern "C" HRESULT _stdcall V2Link(iTVPFunctionExporter *exporter) {
+EXPORT(HRESULT) V2Link(iTVPFunctionExporter *exporter) {
 	TVPInitImportStub(exporter);
 	iTJSDispatch2 * global = TVPGetScriptDispatch();
 	if (global) {
@@ -86,7 +87,7 @@ extern "C" HRESULT _stdcall V2Link(iTVPFunctionExporter *exporter) {
 	return S_OK;
 }
 //---------------------------------------------------------------------------
-extern "C" HRESULT _stdcall V2Unlink() {
+EXPORT(HRESULT) V2Unlink() {
 	if(TVPPluginGlobalRefCount > GlobalRefCountAtInit) return E_FAIL;
 	iTJSDispatch2 * global = TVPGetScriptDispatch();
 	if (global)	{

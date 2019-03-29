@@ -1,14 +1,14 @@
 Title: resouce edit plugin
 Author: T.Imoto
 
-������͂ȂɁH
+●これはなに？
 
-���s�t�@�C���̃��\�[�X�𑀍삷��v���O�C���ł��B
+実行ファイルのリソースを操作するプラグインです。
 
-���g�p���@
+●使用方法
 
-manual.tjs ���Q�Ƃ̂��ƁB
+manual.tjs を参照のこと。
 
-�����C�Z���X
+●ライセンス
 
-���C�Z���X�͋g���g��Z�{�̂ɏ������܂��B
+ライセンスは吉里吉里Z本体に準拠します。

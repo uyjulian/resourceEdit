@@ -1,25 +1,25 @@
 /**
- * ‹[Ž—ƒR[ƒh‚É‚æ‚éƒ}ƒjƒ…ƒAƒ‹
+ * æ“¬ä¼¼ã‚³ãƒ¼ãƒ‰ã«ã‚ˆã‚‹ãƒžãƒ‹ãƒ¥ã‚¢ãƒ«
  */
 class ResourceEdit
 {
 	/**
-	 * ŽÀ‘•ƒtƒ@ƒCƒ‹‚ÌƒAƒCƒRƒ“‚ð’u‚«Š·‚¦‚Ü‚·
+	 * å®Ÿè£…ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚¢ã‚¤ã‚³ãƒ³ã‚’ç½®ãæ›ãˆã¾ã™
 	 *
-	 * ŽÀsƒtƒ@ƒCƒ‹–¼‚ÅŽw’è‚µ‚½ŽÀsƒtƒ@ƒCƒ‹‚ÌƒAƒCƒRƒ“‚ðƒAƒCƒRƒ“ƒtƒ@ƒCƒ‹–¼‚ÅŽw’è‚µ‚½ƒAƒCƒRƒ“‚Å’u‚«Š·‚¦‚Ü‚·
-	 * @param exeFileName ŽÀsƒtƒ@ƒCƒ‹–¼
-	 * @param iconFileName ƒAƒCƒRƒ“ƒtƒ@ƒCƒ‹–¼
-	 * @return ƒGƒ‰[ƒR[ƒhB1‚ÌŽž¬Œ÷‚ÅA•‰‚Ì’l‚ÌŽžƒGƒ‰[
+	 * å®Ÿè¡Œãƒ•ã‚¡ã‚¤ãƒ«åã§æŒ‡å®šã—ãŸå®Ÿè¡Œãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚¢ã‚¤ã‚³ãƒ³ã‚’ã‚¢ã‚¤ã‚³ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«åã§æŒ‡å®šã—ãŸã‚¢ã‚¤ã‚³ãƒ³ã§ç½®ãæ›ãˆã¾ã™
+	 * @param exeFileName å®Ÿè¡Œãƒ•ã‚¡ã‚¤ãƒ«å
+	 * @param iconFileName ã‚¢ã‚¤ã‚³ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«å
+	 * @return ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ã€‚1ã®æ™‚æˆåŠŸã§ã€è² ã®å€¤ã®æ™‚ã‚¨ãƒ©ãƒ¼
 	 */
 	function updateIcon(exeFileName, iconFileName);
 
 	/**
-	 * ŽÀ‘•ƒtƒ@ƒCƒ‹‚ÌƒoƒCƒiƒŠƒŠƒ\[ƒX‚ð’Ç‰Á/’u‚«Š·‚¦‚µ‚Ü‚·B
-	 * @param exeFileName ŽÀsƒtƒ@ƒCƒ‹–¼
-	 * @param binaryFileName ƒŠƒ\[ƒX‚É’Ç‰Á‚·‚éƒtƒ@ƒCƒ‹‚Ì–¼‘O
-	 * @param resourceType ƒŠƒ\[ƒX‚Ìƒ^ƒCƒv–¼
-	 * @param resourceName ƒŠƒ\[ƒX‚Ì–¼‘O
-	 * @return ƒGƒ‰[ƒR[ƒhB1‚ÌŽž¬Œ÷‚ÅA•‰‚Ì’l‚ÌŽžƒGƒ‰[
+	 * å®Ÿè£…ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒã‚¤ãƒŠãƒªãƒªã‚½ãƒ¼ã‚¹ã‚’è¿½åŠ /ç½®ãæ›ãˆã—ã¾ã™ã€‚
+	 * @param exeFileName å®Ÿè¡Œãƒ•ã‚¡ã‚¤ãƒ«å
+	 * @param binaryFileName ãƒªã‚½ãƒ¼ã‚¹ã«è¿½åŠ ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã®åå‰
+	 * @param resourceType ãƒªã‚½ãƒ¼ã‚¹ã®ã‚¿ã‚¤ãƒ—å
+	 * @param resourceName ãƒªã‚½ãƒ¼ã‚¹ã®åå‰
+	 * @return ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ã€‚1ã®æ™‚æˆåŠŸã§ã€è² ã®å€¤ã®æ™‚ã‚¨ãƒ©ãƒ¼
 	 */
 	function UpdateBinaryResource( exeFileName, binaryFileName, resourceType, resourceName );
 };
