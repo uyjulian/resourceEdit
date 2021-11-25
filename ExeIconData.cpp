@@ -18,7 +18,7 @@ void ExeIconData::Load(LPCTSTR pszFileName) {
 	icon_ids_.clear();
 	HINSTANCE hFile = LoadLibraryEx( pszFileName, 0, LOAD_LIBRARY_AS_DATAFILE | LOAD_WITH_ALTERED_SEARCH_PATH );
 	if( hFile != NULL ) {
-		::EnumResourceNames( hFile, RT_GROUP_ICON, &EnumResNameProc, (LONG_PTR)this );
+		::EnumResourceNames( hFile, RT_GROUP_ICON, (ENUMRESNAMEPROCW)&EnumResNameProc, (LONG_PTR)this );
 		LPTSTR group = GetIconGroup();
 		if( group != NULL ) {
 			::EnumResourceLanguages( hFile, RT_GROUP_ICON, group, (ENUMRESLANGPROC)&EnumResLangProc, (LONG_PTR)this );
